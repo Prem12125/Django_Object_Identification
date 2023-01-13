@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<!--CSS Stylesheet-->
+	<link rel="stylesheet" type="text/css" href="/static/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+    body {
+            background-color: #dfe4ea;
+            padding-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigation-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+    	<div class="container">
+    		<div class="navbar-header">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-index" aria-expanded="false">
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    				<span class="icon-bar"></span>
+    			</button>
+    			<a href="index.html" class="navbar-brand">Object Identification</a>
+    		</div>  
+    		<div class="collapse navbar-collapse" id="navbar-index">
+    			<ul class="nav navbar-nav navbar-right">
+    				<li><a href="https://premnarayan.in"><span class="glyphicon glyphicon-info-sign"></span> Contact Us</a></li>
+    				<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+    				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    			</ul>
+    		</div>  		
+    	</div>
+    </nav>
+    <!--Login Form-->
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h3>Select Image</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/imageProcess" method="post" enctype="multipart/form-data">
+                        {% csrf_token%}
+                       <div class="form-group">
+                        <label for="file">UpLoad File:</label>
+                        <input type="file"  id="image" name="image">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Submit</label>
+                        <input type="submit" value="submit">
+                    </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+{% block content %}
+
+{% endblock %}
+    <!--Footer-->
+    <footer class="text-center">
+        <div class="container footer-container">
+            <p>Copyright &copy; Object Identification. All Rights Reserved  |  Contact Us: +91 9694287342</p>
+        </div>
+    </footer>
+    
+    <!--Javascript files-->
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

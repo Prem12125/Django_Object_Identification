@@ -1,0 +1,63 @@
+body,
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	padding-top: 50px;
+}
+
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+}
+
+#content {
+	height: 100%;
+	min-height: 550px;
+}
+#banner-image {
+	background: url(../img/bg-index.jpg) no-repeat center center;
+	background-size: cover;
+	text-align: center;
+	min-height: 550px;
+}
+
+#banner-content {
+	position: relative;
+	padding: 5% 0;
+	margin: 12% auto;
+	background-color: rgba(255,255,255,0.8);
+	max-width: 600px;
+	border-radius: 5px;
+}
+#banner-content h1 {
+	padding: 20px;
+}
+
+footer {
+	padding: 15px 0;
+	background-color: #f8f8f8;
+	bottom: 0;
+	width: 100%;
+	position: fixed;
+}
+
+.footer-container p{
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	body {
+		height: 100%;
+		overflow-y: auto;
+	}
+	footer {
+		bottom: 0;
+		position: fixed;
+	}
+	.padding-10 {
+	margin: 10px;
+}
+}
